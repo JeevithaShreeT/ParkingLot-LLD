@@ -60,12 +60,12 @@ Occupied slot numbers per floor
 
 🧱 Object-Oriented Design
 Class	Responsibility
-Vehicle	Represents a vehicle with type, registration, and color
-Slot	A parking slot that can hold one specific type of vehicle
-Floor	Contains a list of parking slots and provides slot availability
-Ticket	Generated when a vehicle is parked
-Parking	Manages all floors, parking, unparking, and displays
-Main(ParkingLot)	Handles command-line inputs and invokes the system
+Vehicle :	Represents a vehicle with type, registration, and color
+Slot	: A parking slot that can hold one specific type of vehicle
+Floor	: Contains a list of parking slots and provides slot availability
+Ticket	: Generated when a vehicle is parked
+Parking	: Manages all floors, parking, unparking, and displays
+Main(ParkingLot)	: Handles command-line inputs and invokes the system
 
 🧩 Class Diagram (Textual)
 
@@ -74,7 +74,7 @@ ParkingLot
 Floor
  ├── List<Slot>
 Slot
- ├── Vehicle (optional)
+ ├── Vehicle
 Vehicle
  ├── VehicleType (CAR, BIKE, TRUCK)
 Ticket
@@ -94,19 +94,6 @@ It assigns the slot, creates a ticket, and prints the ticket.
 You can unpark the vehicle using the ticket ID.
 
 Use display commands to check the state of the parking lot.
-
-▶️ How to Run
-
-javac Main.java
-java Main
-
-Then enter commands like:
-
-create_parking_lot 2 6
-park_vehicle CAR KA-01-HH-1234 Red
-display free_count CAR
-unpark_vehicle PR1234_1_4
-exit
 
 💬 Sample Commands
 
@@ -159,7 +146,7 @@ Clean class design
 Command-driven architecture
 
 **BELOW IS THE LLD PARKING LOT QUESTION TO UNDERSTAND THE PROBLEM:
-(THE PROBLEM IS AVALIABLE AT work@tech website under LLD practice Problems)**
+(THE PROBLEM IS AVAILABLE AT work@tech website under LLD practice Problems)**
 
 Create a command-line application for the parking lot system with the following requirements.
 
