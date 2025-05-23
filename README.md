@@ -17,7 +17,8 @@ Sample Commands
 
 Tech Stack
 
-Future Enhancements
+
+
 
 🔍 Overview
 The Parking Lot System supports:
